@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <div id = 'mage'><img src="./images/user.png" alt="pic" /></div>
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About me</h1>
+            <p id="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              reiciendis, enim cupiditate quo sint molestias debitis
+              consequuntur porro quas facere voluptates sunt odio provident
+              delectus similique omnis sit ipsa et voluptas sed tempora maxime?
+              Sint tempore culpa aliquam illum dolore voluptas molestiae
+              impedit, aperiam similique.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('services')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Websites</li>
+                <li><span>Web Development</span><br />Building Websites</li>
+                <li>
+                  <span>Full Stack Developer</span><br />Full Stack Websites
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021-2022</span><br />Designing Websites</li>
+                <li><span>2019-2022</span><br />Building Websites</li>
+                <li>
+                  <span>2022-2023</span><br />Full Stack Websites
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="services">
+              <ul>
+                <li><span>2019-2023</span><br />Designing Websites</li>
+                <li><span>2018-2020</span><br />Building Websites</li>
+                <li>
+                  <span>2022-2023</span><br />Full Stack Websites
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-links');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-links');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+  </body>
+</html>

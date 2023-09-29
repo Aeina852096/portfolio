@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2674a93fa7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="login.html">Contact me</a></li>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+          </ul>
+          <!-- <i class="fa-solid fa-bars"></i> -->
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="./images/bg2.png" alt="pic" />
+        </div>
+      </section>
+    </main>
+    <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col1">
+              <div id = 'mage'><img src="./images/user.png" alt="pic" /></div>
+            </div>
+            <div class="about-col2">
+              <h1 class="sub-title">About me</h1>
+              <p id="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                reiciendis, enim cupiditate quo sint molestias debitis
+                consequuntur porro quas facere voluptates sunt odio provident
+                delectus similique omnis sit ipsa et voluptas sed tempora maxime?
+                Sint tempore culpa aliquam illum dolore voluptas molestiae
+                impedit, aperiam similique.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('services')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br />Designing Websites</li>
+                  <li><span>Web Development</span><br />Building Websites</li>
+                  <li>
+                    <span>Full Stack Developer</span><br />Full Stack Websites
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2021-2022</span><br />Designing Websites</li>
+                  <li><span>2019-2022</span><br />Building Websites</li>
+                  <li>
+                    <span>2022-2023</span><br />Full Stack Websites
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="services">
+                <ul>
+                  <li><span>2019-2023</span><br />Designing Websites</li>
+                  <li><span>2018-2020</span><br />Building Websites</li>
+                  <li>
+                    <span>2022-2023</span><br />Full Stack Websites
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class ='fas fa-code'></i>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                alias ipsum voluptatem sunt ipsam quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class ='fas fa-crop-alt'></i>
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                alias ipsum voluptatem sunt ipsam quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-codepen"></i>
+              <h2>Full Stack Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                alias ipsum voluptatem sunt ipsam quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class ='fas fa-code'></i>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                alias ipsum voluptatem sunt ipsam quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class ='fas fa-crop-alt'></i>
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                alias ipsum voluptatem sunt ipsam quidem.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-codepen"></i>
+              <h2>Full Stack Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                alias ipsum voluptatem sunt ipsam quidem.
+              </p>
+              <a href="#" class="btn-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio">
+        <div class="container">
+          <div class="sub-title">Projects</div>
+          <div class="work-list">
+            <div class="work">
+              <img src="./images/work-1.jpg" />
+              <div class="layer">
+                <h3>Website Development</h3>
+                <p>
+                  The website connects you to people<br> around the world you can<br>
+                  visit us o google.
+                </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+              </div>
+            <div class="work">
+              <img src="./images/work-2.jpg" />
+              <div class="layer">
+                  <h3>Website Designing</h3>
+                  <p>
+                    The website connects you to people<br> around the world you can<br>
+                    visit us o google.
+                  </p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+              <img src="./images/work-3.jpg" />
+              <div class="layer">
+                  <h3>Online Shopping Development</h3>
+                  <p>
+                    The website connects you to people<br>around the world you can<br>
+                    visit us o google.
+                  </p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+          </div>
+          <a href="'#" class="btn-3">Learn More</a>
+        </div>
+      </div>
+      <div class="login-container">
+        <div class="login">
+            <div class="content">
+                <img src="./images/work-2.jpg" alt="pic">
+            </div>
+            <div class="loginform">
+                <h1>Login</h1>
+                <form>
+                    <div class="tbox">
+                        <i class="fa fa-user"></i><input type="text" name="" placeholder="Email">
+                        
+                    </div>
+                    <div class="tbox">
+                        <i class="fa fa-lock"></i><input type="text" name="" placeholder="Password">     
+                    </div>
+                    <button class="btn">Login</button>
+                </form>
+                <ul class="social">
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-google"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+      <script>
+          var tablinks = document.getElementsByClassName('tab-links');
+          var tabcontents = document.getElementsByClassName('tab-contents');
+          function opentab(tabname){
+              for(tablink of tablinks){
+                  tablink.classList.remove('active-links');
+              }
+              for(tabcontent of tabcontents){
+                  tabcontent.classList.remove('active-tab');
+              }
+              event.currentTarget.classList.add('active-links');
+              document.getElementById(tabname).classList.add('active-tab');
+          }
+      </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Mern Developer",
+          "Full Stack Developer",
+          "UI Ux Designer",
+          "Graphic Designer",
+          "Web Developer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
